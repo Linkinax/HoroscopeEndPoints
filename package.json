@@ -1,0 +1,19 @@
+{
+  "name": "endpointhoroscope",
+  "version": "1.0.0",
+  "description": "EndPoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linkinax/HoroscopeEndPoints.git"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Linkinax/HoroscopeEndPoints/issues"
+  },
+  "homepage": "https://github.com/Linkinax/HoroscopeEndPoints#readme"
+}
