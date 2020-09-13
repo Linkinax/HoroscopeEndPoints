@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Linkinax/HoroscopeEndPoints/issues"
   },
-  "homepage": "https://github.com/Linkinax/HoroscopeEndPoints#readme"
+  "homepage": "https://github.com/Linkinax/HoroscopeEndPoints#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "rp": "^0.2.0"
+  }
 }
