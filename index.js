@@ -24,10 +24,12 @@ app.get("/oggi/:segno", function(req, res) {
     };
     rp(options)
       .then(($) => {
-  
+        
+        //body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(2) > p
+        //document.querySelector("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(2)")
         myObj["Data"]= ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > time").text());
         myObj["Segno"]= (segno);
-        myObj["Generale"] = ($(".c-multi-tab__tab-body.j-tabs-tab0.is-active > p \n\n").eq(1).text());
+        myObj["Generale"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(2) > p").text());
         myObj["Amore"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(4) > p").text());
         myObj["Lavoro"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(5) > p").text());
   
@@ -57,7 +59,7 @@ app.get("/domani/:segno", function(req, res) {
   
         myObj["Data"]= ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > time").text());
         myObj["Segno"]= (segno);
-        myObj["Generale"] = ($(".c-multi-tab__tab-body.j-tabs-tab0.is-active > p \n\n").eq(1).text());
+        myObj["Generale"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(2) > p").text());
         myObj["Amore"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(4) > p").text());
         myObj["Lavoro"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(5) > p").text());
   
@@ -88,7 +90,7 @@ app.get("/domani/:segno", function(req, res) {
   
         myObj["Data"]= ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > time").text());
         myObj["Segno"]= (segno);
-        myObj["Generale"] = ($(".c-multi-tab__tab-body.j-tabs-tab0.is-active > p \n\n").eq(1).text());
+        myObj["Generale"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(2) > p").text());
         myObj["Amore"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(4) > p").text());
         myObj["Lavoro"] = ($("body > div.l-wrapper > div:nth-child(5) > div > section > div > div > div:nth-child(5) > p").text());
   
